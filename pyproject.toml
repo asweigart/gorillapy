@@ -1,0 +1,30 @@
+[project]
+name = "GorillaPy"
+version = "1.0.0"
+authors = [
+    {name="Al Sweigart", email="al@inventwithpython.com"},
+]
+description = "The classic Gorilla.BAS game ported to Python and Pygame"
+readme = "README.md"
+requires-python = ">=2.7"
+classifiers = [
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Homepage = "https://github.com/asweigart/gorillapy"
+Issues = "https://github.com/asweigart/gorillapy/issues"
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+[tool.hatch.envs.default]
+dependencies = ['pygame']
+
+
